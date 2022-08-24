@@ -29,10 +29,8 @@ Users should be able to:
 
 ### Links
 
-<!-- TODO: Solution URL -->
-<!-- - Solution URL: [Add solution URL here](https://your-solution-url.com) -->
-<!-- TODO: Live Site URL -->
-<!-- - Live Site URL: [Add live site URL here](https://your-live-site-url.com) -->
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-single-price-card-with-css-grid-button-hover-animation-4wFM3Wyhul)
+- Live Site URL: [GitHub Pages](https://lau-san.github.io/fm-single-price-grid-component/)
 
 ## My process
 
