@@ -12,9 +12,6 @@ This is a solution to the [Single price grid component challenge on Frontend Men
     - [Links](#links)
   - [My process](#my-process)
     - [Built with](#built-with)
-    - [What I learned](#what-i-learned)
-    - [Continued development](#continued-development)
-    - [Useful resources](#useful-resources)
   - [Author](#author)
 
 ## Overview
@@ -28,7 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-<!-- TODO: Screenshots -->
+![](./screenshot.png)
 
 ### Links
 
@@ -41,23 +38,10 @@ Users should be able to:
 
 ### Built with
 
-<!-- TODO: Built with -->
 - Semantic HTML5 markup
-<!-- - Flexbox -->
+- Flexbox
 - CSS Grid
 - [Sass](https://sass-lang.com)
-
-### What I learned
-
-<!-- TODO: What I learned -->
-
-### Continued development
-
-<!-- TODO: Continued development  -->
-
-### Useful resources
-
-<!-- TODO: Useful resources -->
 
 ## Author
 

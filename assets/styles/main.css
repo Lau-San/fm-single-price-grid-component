@@ -1,1 +1,195 @@
-/*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+/*
+-> Karla
+	> 400
+	> 700
+*/
+:root {
+  font-size: 16px;
+}
+
+* {
+  font-family: Karla, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: hsl(204deg, 43%, 93%);
+  color: #fff;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4rem;
+}
+@media screen and (max-width: 576px) {
+  .wrapper {
+    padding: 0;
+  }
+}
+
+.grid {
+  background: #fff;
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+  max-width: 650px;
+  display: grid;
+  grid-template: repeat(2, auto)/repeat(2, 1fr);
+}
+@media (max-width: 576px) {
+  .grid {
+    grid-template: 1fr/repeat(3, auto);
+    width: clamp(200px, 82%, 600px);
+  }
+}
+.grid section {
+  padding: 2.4rem 2rem;
+}
+@media (max-width: 576px) {
+  .grid section {
+    padding: 2rem 1.5rem;
+  }
+}
+.grid .pricing {
+  border-radius: 0 0 0 0.5rem;
+}
+@media (max-width: 576px) {
+  .grid .pricing {
+    border-radius: 0;
+  }
+}
+.grid .why-us {
+  border-radius: 0 0 0.5rem 0;
+}
+@media (max-width: 576px) {
+  .grid .why-us {
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+}
+
+.hero {
+  grid-row: 1;
+  grid-column: 1/-1;
+}
+@media (max-width: 576px) {
+  .hero {
+    grid-column: 1;
+  }
+}
+.hero h1 {
+  color: hsl(179deg, 62%, 43%);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.05rem;
+}
+.hero h3 {
+  color: hsl(71deg, 73%, 54%);
+  font-weight: 700;
+  margin-top: 1rem;
+}
+@media (max-width: 576px) {
+  .hero h3 {
+    margin-top: 1.5rem;
+  }
+}
+.hero p {
+  color: hsl(218deg, 22%, 67%);
+  max-width: 550px;
+  margin-top: 0.8rem;
+}
+@media (max-width: 576px) {
+  .hero p {
+    margin-top: 1.3rem;
+    line-height: 1.7em;
+  }
+}
+
+.pricing {
+  background: hsl(179deg, 62%, 43%);
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.pricing h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+.pricing .price {
+  color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 0.8rem;
+}
+.pricing .price span {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.pricing p {
+  margin-top: 0.4rem;
+  margin-bottom: auto;
+}
+.pricing a {
+  background: hsl(71deg, 73%, 54%);
+  border-radius: 0.3em;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  padding: 0.6rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.5s ease;
+}
+@media (max-width: 576px) {
+  .pricing a {
+    font-size: 1.1rem;
+    padding: 1rem;
+    margin-top: 1.8rem;
+  }
+}
+.pricing a:hover {
+  background: hsl(71deg, 80%, 60%);
+  transform: scale(1.05) translate(0, -3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.why-us {
+  background: hsla(179deg, 62%, 43%, 0.8);
+  grid-row: 2;
+}
+@media (max-width: 576px) {
+  .why-us {
+    grid-row: 3;
+  }
+}
+.why-us h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.why-us ul {
+  margin-top: 0.8rem;
+  list-style: none;
+}
+@media (max-width: 576px) {
+  .why-us ul {
+    margin-top: 1.2rem;
+  }
+}
+.why-us li {
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 0.1rem;
+}
+@media (max-width: 576px) {
+  .why-us li {
+    margin-top: 0.2rem;
+  }
+}/*# sourceMappingURL=main.css.map */

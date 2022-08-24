@@ -17,10 +17,213 @@ $bright-yellow: hsl(71, 73%, 54%);
 $light-gray: hsl(204, 43%, 93%);
 $grayish-blue: hsl(218, 22%, 67%);
 
+// Breakpoints
+
+$sm: 576px;
+
 // Normalizing
 // ----------
-// TODO: Normalize stuff
 
 :root {
 	font-size: 16px;
 }
+
+* {
+	font-family: Karla, sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+}
+
+// ---
+
+body {
+	background: $light-gray;
+	color: #fff;
+}
+
+.wrapper {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 4rem;
+
+	@media screen and (max-width: $sm) {
+		padding: 0;
+	}
+}
+
+.grid {
+	$radius: .5rem;
+
+	background: #fff;
+	border-radius: $radius $radius $radius $radius;
+	box-shadow: 0 15px 20px rgba(#000, .1);
+	max-width: 650px;
+	display: grid;
+	grid-template: repeat(2, auto) / repeat(2, 1fr);
+
+	@media (max-width: $sm) {
+		grid-template: 1fr / repeat(3, auto);
+		width: clamp(200px, 82%, 600px);
+	}
+
+	section {
+		padding: 2.4rem 2rem;
+
+		@media (max-width: $sm) {
+			padding: 2rem 1.5rem;
+		}
+	}
+
+	.pricing {
+		border-radius: 0 0 0 $radius;
+
+		@media (max-width: $sm) {
+			border-radius: 0;
+		}
+	}
+
+	.why-us {
+		border-radius: 0 0 $radius 0;
+
+		@media (max-width: $sm) {
+			border-radius: 0 0 $radius $radius;
+		}
+	}
+}
+
+.hero {
+	grid-row: 1;
+	grid-column: 1 / -1;
+
+	@media (max-width: $sm) {
+		grid-column: 1;
+	}
+
+	h1 {
+		color: $cyan;
+		font-size: 1.5rem;
+		font-weight: 700;
+		letter-spacing: -.05rem;
+	}
+
+	h3 {
+		color: $bright-yellow;
+		font-weight: 700;
+		margin-top: 1rem;
+
+		@media (max-width: $sm) {
+			margin-top: 1.5rem;
+		}
+	}
+
+	p {
+		color: $grayish-blue;
+		max-width: 550px;
+		margin-top: .8rem;
+
+		@media (max-width: $sm) {
+			margin-top: 1.3rem;
+			line-height: 1.7em;
+		}
+	}
+}
+
+.pricing {
+	background: $cyan;
+	grid-row: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	h3 {
+		font-size: 1.15rem;
+		font-weight: 700;
+	}
+
+	.price {
+		color: rgba(255,255,255, .6);
+		display: flex;
+		align-items: center;
+		gap: .8rem;
+		margin-top: .8rem;
+
+		span {
+			color: #fff;
+			font-size: 2rem;
+			font-weight: 700;
+		}
+	}
+
+	p {
+		margin-top: .4rem;
+		margin-bottom: auto;
+	}
+
+	a {
+		background: $bright-yellow;
+		border-radius: .3em;
+		box-shadow: 0 5px 10px rgba(#000, .2);
+		color: #fff;
+		font-weight: 700;
+		text-align: center;
+		text-decoration: none;
+		display: block;
+		padding: .6rem;
+		transition:
+			transform .3s ease,
+			box-shadow .3s ease,
+			background-color .5s ease;
+
+		@media (max-width: $sm) {
+			font-size: 1.1rem;
+			padding: 1rem;
+			margin-top: 1.8rem;
+		}
+
+		&:hover {
+			background: hsl(71, 80%, 60%);
+			transform: scale(1.05) translate(0, -3px);
+			box-shadow: 0 10px 20px rgba(#000, .2);
+		}
+
+	}
+}
+
+.why-us {
+	background: hsla(179, 62%, 43%, .8);
+	grid-row: 2;
+
+	@media (max-width: $sm) {
+		grid-row: 3;
+	}
+
+	h2 {
+		font-size: 1.2rem;
+		font-weight: 700;
+	}
+
+	ul {
+		margin-top: .8rem;
+		list-style: none;
+
+		@media (max-width: $sm) {
+			margin-top: 1.2rem;
+		}
+	}
+
+	li {
+		color: rgba(#fff, .8);
+		margin-top: .1rem;
+
+		@media (max-width: $sm) {
+			margin-top: .2rem;
+		}
+	}
+}
+
+// Attribution
+// TODO: Style attribution
