@@ -226,4 +226,25 @@ body {
 }
 
 // Attribution
-// TODO: Style attribution
+
+@media (min-width: $sm) {
+	footer {
+		color: $grayish-blue;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%, 0);
+		padding: .5rem 0;
+
+		a {
+			color: $cyan;
+			font-weight: 700;
+			text-decoration: none;
+			transition: color .5s ease;
+
+			&:hover {
+				color:hsl(179, 70%, 50%);
+			}
+		}
+	}
+}
